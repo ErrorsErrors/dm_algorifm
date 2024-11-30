@@ -48,5 +48,6 @@ if Decimal(right) / Decimal(ch) >= low and Decimal(right) / Decimal(ch) < high:
     ii = int(str(left).split('.')[0])
     ib = bin(ii)[2:].zfill(k_int)
     print("Закодированная:", ib)
+    print("Ср. кол. инф. на символ:", len(ib) / len(input_string))
 else:
     print("Ошибка")
